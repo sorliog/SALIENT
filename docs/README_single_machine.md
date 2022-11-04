@@ -47,7 +47,7 @@ conda install pyg -c pyg -c conda-forge
 
 SALIENT has been tested on PyG 2.0.2.
 
-### --4. Install Latest PyTorch-Sparse (Unnessary as the modification has been merged)
+### Skip 4. Install Latest PyTorch-Sparse (Unnecessary as the modification has been merged)
 
 PyTorch-Sparse is usually installed together with PyG. We made a slight modification to support faster data transfer. See this [pull request](https://github.com/rusty1s/pytorch_sparse/pull/195) for detail. Currently, this change has been merged but not yet distributed. Hence, one should uninstall the prior version of PyTorch-Sparse and install the latest one from source:
 
