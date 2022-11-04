@@ -1,4 +1,6 @@
 # Setup Instructions on a GPU Machine
+## Setup for the installion
+First things first, install CUDA with the [installation guide](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html).
 
 ### 1. Install Conda
 
@@ -30,7 +32,7 @@ conda activate salient
 Follow instructions on the [PyTorch homepage](https://pytorch.org). For example, to install on a linux machine with CUDA 11.3:
 
 ```bash
-conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+conda install pytorch=1.10.0 torchvision torchaudio cudatoolkit=11.3 -c pytorch
 ```
 
 SALIENT has been tested on PyTorch 1.10.0.
@@ -45,7 +47,7 @@ conda install pyg -c pyg -c conda-forge
 
 SALIENT has been tested on PyG 2.0.2.
 
-### 4. Install Latest PyTorch-Sparse
+### --4. Install Latest PyTorch-Sparse (Unnessary as the modification has been merged)
 
 PyTorch-Sparse is usually installed together with PyG. We made a slight modification to support faster data transfer. See this [pull request](https://github.com/rusty1s/pytorch_sparse/pull/195) for detail. Currently, this change has been merged but not yet distributed. Hence, one should uninstall the prior version of PyTorch-Sparse and install the latest one from source:
 
